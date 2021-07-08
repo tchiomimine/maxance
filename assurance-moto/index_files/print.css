@@ -1,0 +1,35 @@
+.base-menu, .banner-img, .banner ul li img, #nav-produits, .dots, .banner ul li a, .breadcrumbs, #callback{display:none;}
+.banner.has-dots[style]{height: auto !important; overflow:visible !important;}
+.banner ul { left: 130px !important; top: 100px !important; width: 100% !important;}
+.banner ul li {width: 300px !important; margin-left: 10px;  }
+#pratique{position:static; margin-top: 40px;}
+.item-page, .aside {padding-top: 230px;}
+h1, h2, h3{font-weight:bold;}
+h1{font-size: 26px;}
+h2{font-size: 22px;}
+h3{font-size: 18px;}
+#listagencesnear, .listeAgences { overflow:visible; height:auto !important;}
+#popupContent{background:white !important; width: 100%;top:120 px;}
+.popup  #listagencesnear li, .popup .mfp-close,.popup #mapbodyagence, .popup .clear, .popup .aside, .popup h1, .popup .telephone, .popup h2, .popup #changerCentre , .popup #footer-mention {display:none;}
+.popup .mfp-content{width:90%;}
+/*
+     FILE ARCHIVED ON 15:58:33 Apr 09, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:18:52 Jul 08, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  esindex: 0.021
+  PetaboxLoader3.resolve: 65.795 (2)
+  captures_list: 334.458
+  LoadShardBlock: 309.764 (3)
+  exclusion.robots: 0.187
+  CDXLines.iter: 19.326 (3)
+  load_resource: 148.802 (2)
+  exclusion.robots.policy: 0.177
+  PetaboxLoader3.datanode: 302.716 (5)
+  RedisCDXSource: 1.582
+*/

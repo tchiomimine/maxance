@@ -1,0 +1,728 @@
+/* Magnific Popup CSS */
+.mfp-bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1042;
+  overflow: hidden;
+  position: fixed;
+  background: #0b0b0b;
+  opacity: 0.8;
+  filter: alpha(opacity=80); }
+
+.mfp-wrap {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1043;
+  position: fixed;
+  outline: none !important;
+  -webkit-backface-visibility: hidden; }
+
+.mfp-container {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 0 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.mfp-container:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+
+.mfp-align-top .mfp-container:before {
+  display: none; }
+
+.mfp-content {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: left;
+  z-index: 1045;
+  
+   }
+
+.mfp-inline-holder .mfp-content, .mfp-ajax-holder .mfp-content {
+  width: 70%;
+  background:white;
+  cursor: auto;
+  padding: 24px 36px;
+  
+   }
+
+.mfp-ajax-cur {
+  cursor: progress; }
+
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  cursor: -moz-zoom-out;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out; }
+
+.mfp-zoom {
+  cursor: pointer;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in; }
+
+.mfp-auto-cursor .mfp-content {
+  cursor: auto; }
+
+.mfp-close, .mfp-arrow, .mfp-preloader, .mfp-counter {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.mfp-loading.mfp-figure {
+  display: none; }
+
+.mfp-hide {
+  display: none !important; }
+
+.mfp-preloader {
+  color: #cccccc;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  text-align: center;
+  margin-top: -0.8em;
+  left: 8px;
+  right: 8px;
+  z-index: 1044; }
+  .mfp-preloader a {
+    color: #cccccc; }
+    .mfp-preloader a:hover {
+      color: white; }
+
+.mfp-s-ready .mfp-preloader {
+  display: none; }
+
+.mfp-s-error .mfp-content {
+  display: none; }
+
+button.mfp-close, button.mfp-arrow {
+  overflow: visible;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  display: block;
+  outline: none;
+  padding: 0;
+  z-index: 1046;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+.mfp-close {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  padding: 0 0 18px 10px;
+  color: white;
+  font-style: normal;
+  font-size: 28px;
+  font-family: Arial, Baskerville, monospace; }
+  .mfp-close:hover, .mfp-close:focus {
+    opacity: 1;
+    filter: alpha(opacity=100); }
+  .mfp-close:active {
+    top: 1px; }
+
+.mfp-close-btn-in .mfp-close {
+  color: #333333; }
+
+.mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
+  color: white;
+  right: -6px;
+  text-align: right;
+  padding-right: 6px;
+  width: 100%; }
+
+.mfp-counter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #cccccc;
+  font-size: 12px;
+  line-height: 18px; }
+
+.mfp-arrow {
+  position: absolute;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  margin: 0;
+  top: 50%;
+  margin-top: -55px;
+  padding: 0;
+  width: 90px;
+  height: 110px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  .mfp-arrow:active {
+    margin-top: -54px; }
+  .mfp-arrow:hover, .mfp-arrow:focus {
+    opacity: 1;
+    filter: alpha(opacity=100); }
+  .mfp-arrow:before, .mfp-arrow:after, .mfp-arrow .mfp-b, .mfp-arrow .mfp-a {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 35px;
+    margin-left: 35px;
+    border: medium inset transparent; }
+  .mfp-arrow:after, .mfp-arrow .mfp-a {
+    border-top-width: 13px;
+    border-bottom-width: 13px;
+    top: 8px; }
+  .mfp-arrow:before, .mfp-arrow .mfp-b {
+    border-top-width: 21px;
+    border-bottom-width: 21px;
+    opacity: 0.7; }
+
+.mfp-arrow-left {
+  left: 0; }
+  .mfp-arrow-left:after, .mfp-arrow-left .mfp-a {
+    border-right: 17px solid white;
+    margin-left: 31px; }
+  .mfp-arrow-left:before, .mfp-arrow-left .mfp-b {
+    margin-left: 25px;
+    border-right: 27px solid #3f3f3f; }
+
+.mfp-arrow-right {
+  right: 0; }
+  .mfp-arrow-right:after, .mfp-arrow-right .mfp-a {
+    border-left: 17px solid white;
+    margin-left: 39px; }
+  .mfp-arrow-right:before, .mfp-arrow-right .mfp-b {
+    border-left: 27px solid #3f3f3f; }
+
+.mfp-iframe-holder {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .mfp-iframe-holder .mfp-content {
+    line-height: 0;
+    width: 100%;
+    max-width: 900px; }
+  .mfp-iframe-holder .mfp-close {
+    top: -40px; }
+
+.mfp-iframe-scaler {
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 56.25%; }
+  .mfp-iframe-scaler iframe {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: black; }
+
+/* Main image in popup */
+img.mfp-img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  line-height: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 0 40px;
+  margin: 0 auto; }
+
+/* The shadow behind the image */
+.mfp-figure {
+  line-height: 0; }
+  .mfp-figure:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 40px;
+    bottom: 40px;
+    display: block;
+    right: 0;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    background: #444444; }
+  .mfp-figure small {
+    color: #bdbdbd;
+    display: block;
+    font-size: 12px;
+    line-height: 14px; }
+  .mfp-figure figure {
+    margin: 0; }
+
+.mfp-bottom-bar {
+  margin-top: -36px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  cursor: auto; }
+
+.mfp-title {
+  text-align: left;
+  line-height: 18px;
+  color: #f3f3f3;
+  word-wrap: break-word;
+  padding-right: 36px; }
+
+.mfp-image-holder .mfp-content {
+  max-width: 100%; }
+
+.mfp-gallery .mfp-image-holder .mfp-figure {
+  cursor: pointer; }
+
+@media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+  /**
+       * Remove all paddings around the image on small screen
+       */
+  .mfp-img-mobile .mfp-image-holder {
+    padding-left: 0;
+    padding-right: 0; }
+  .mfp-img-mobile img.mfp-img {
+    padding: 0; }
+  .mfp-img-mobile .mfp-figure:after {
+    top: 0;
+    bottom: 0; }
+  .mfp-img-mobile .mfp-figure small {
+    display: inline;
+    margin-left: 5px; }
+  .mfp-img-mobile .mfp-bottom-bar {
+    background: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    margin: 0;
+    top: auto;
+    padding: 3px 5px;
+    position: fixed;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .mfp-img-mobile .mfp-bottom-bar:empty {
+      padding: 0; }
+  .mfp-img-mobile .mfp-counter {
+    right: 5px;
+    top: 3px; }
+  .mfp-img-mobile .mfp-close {
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    text-align: center;
+    padding: 0; } }
+
+@media all and (max-width: 900px) {
+  .mfp-arrow {
+    -webkit-transform: scale(0.75);
+    transform: scale(0.75); }
+  .mfp-arrow-left {
+    -webkit-transform-origin: 0;
+    transform-origin: 0; }
+  .mfp-arrow-right {
+    -webkit-transform-origin: 100%;
+    transform-origin: 100%; }
+  .mfp-container {
+    padding-left: 6px;
+    padding-right: 6px; } }
+
+.mfp-ie7 .mfp-img {
+  padding: 0; }
+.mfp-ie7 .mfp-bottom-bar {
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: 5px;
+  padding-bottom: 5px; }
+.mfp-ie7 .mfp-container {
+  padding: 0; }
+.mfp-ie7 .mfp-content {
+  padding-top: 44px; }
+.mfp-ie7 .mfp-close {
+  top: 0;
+  right: 0;
+  padding-top: 0; }
+  
+  
+/*******************
+*** toutes pages ***
+*******************/
+
+/*** menu top ***/
+
+#toolbox li.item-183, #toolbox li.item-184,  .espaceclient #toolbox li.item-183, .espaceclient #toolbox li.item-184{padding-top:14px; height:32px;}
+header, .espaceclient header {border-top: solid 9px #ea5a3f;}
+p#baseline{color:#ea5a3f;}
+#toolbox li,  .espaceclient #toolbox li{background-color: #c2361b;}
+#toolbox li:hover ,.espaceclient #toolbox li:hover {background-color: #af2b11;}
+#toolbox li.first, .espaceclient   header #toolbox li.first{ background-color: #ea5a3f;}
+
+#toolbox li.first:hover,  .espaceclient  #toolbox li.first:hover{background-color: #d5472c;}
+#toolbox li.item-183,  #toolbox li.item-184{display:none;}
+.particulier h1{  color: #384967;  z-index: 5;  font-weight: 700; font-size:18px; position:relative; }
+
+/** footer **/
+
+/*** menu produits ***/
+
+
+/** pictos menu **/
+
+#nav-produits ul li.item-123{background-position: 2px -404px;}
+#nav-produits ul li.item-124 {background-position: 1px -608px;}
+#nav-produits ul li.item-125{background-position: 3px -708px;}
+
+#nav-produits ul li:hover{background-position: -3px -302px;}
+#nav-produits ul li.item-123:hover{background-position: -12px -100px;}
+#nav-produits ul li.item-124:hover{background-position: -8px 0;}
+#nav-produits ul li.item-125:hover{background-position: -12px -202px;}
+
+
+/** flèches menu **/
+#nav-produits ul li.item-122 .fleche {background-position: -140px 91px;left: 214px;}
+#nav-produits ul li.item-124 .fleche {background-position: -280px 91px;left: 490px;}
+#nav-produits ul li.item-125 .fleche{background-position: -410px 91px; left: 626px;}
+
+
+/** arrière plan du sous-menu **/
+		
+		/***** auto *****/
+		#nav-produits   .item-122 .sous-menu{ background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/auto.jpg");	/*background-color: #913687*/; }
+		/*#nav-produits .item-122 .sous-menu li{background-color: #913687;}*/
+		#nav-produits .item-122 .sous-menu li:hover > a, #nav-produits .item-122 .sous-menu li.default > a{background-color: white; color:#913687;}
+
+		/***** deux roues *****/
+		
+		#nav-produits .item-123 .sous-menu{  background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/moto.jpg"); /*background-color: #18AEE0; */ border-top-color: #18AEE0;/**/border-bottom-color: #18AEE0;}
+		/*#nav-produits .item-123 .sous-menu li{background-color: #18AEE0;}*/
+		#nav-produits .item-123 .sous-menu li:hover > a, #nav-produits .item-123 .sous-menu li.default > a{background-color: white; color:#18AEE0;}
+	
+		/***** habitation *****/
+		#nav-produits .item-124 .sous-menu{  background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/habitation.jpg"); /*background-color:#F09E1D*/; border-top-color: #F09E1D;/**/border-bottom-color: #F09E1D;}
+		/*#nav-produits .item-124 .sous-menu li{background-color: #F09E1D;}*/
+		 #nav-produits .item-124 .sous-menu li:hover > a, #nav-produits .item-124 .sous-menu li.default > a{background-color: white; color:#F09E1D;}
+
+		/***** famille santé *****/
+		#nav-produits .item-125 .sous-menu{  background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/sante-famille.jpg"); /*background-color:#C4C037*/; border-top-color: #C4C037;/**/border-bottom-color: #C4C037;}
+		/*#nav-produits .item-125 .sous-menu li{background-color: #C4C037;}*/
+		#nav-produits .item-125 .sous-menu li:hover > a, #nav-produits .item-125 .sous-menu li.default > a{background-color: white; color:#C4C037;}		
+
+    #nav-produits  .item-289 .sous-menu{background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/image_hospitalisation-sous-menu.jpg")}
+    /*#nav-produits .item-289 .sous-menu li{background-color: #C4C037;}*/
+    #nav-produits .item-289 .sous-menu li:hover > a, #nav-produits .item-289 .sous-menu li.default > a{background-color: white; color:#C4C037;}
+		/**** sous-menu level-2 ****/
+		
+		#nav-produits .sous-menu.level-2, #nav-produits .sous-menu.level-3{ background-color: white;}
+		#nav-produits .sous-menu.level-2 li{ background-color: transparent;}
+	
+		/* auto */
+		#nav-produits  .item-122 .sous-menu.level-2{  background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/auto.jpg");  /*border-top-color: #913687;*/}
+		#nav-produits .item-126 .sous-menu.level-2 {background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/auto-prestige.jpg")}
+		#nav-produits .item-127 .sous-menu.level-2 {background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/vsp.jpg")}
+		#nav-produits .item-128 .sous-menu.level-2 {background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/camping-car.jpg")}
+	
+	  /* deux roues */
+		#nav-produits  .item-123 .sous-menu.level-2{  background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/moto.jpg");  /*border-top-color: #18AEE0;*/}
+		#nav-produits  .item-124 .sous-menu.level-2 {background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/cyclo.jpg")}
+		#nav-produits .item-125 .sous-menu.level-2 {background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/quad.jpg")}
+	
+		/* habitation */
+		#nav-produits  .item-124 .sous-menu.level-2{  background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/habitation.jpg"); /*border-color:#F09E1D;*/}
+
+		/* famille-sante */
+		#nav-produits  .item-125 .sous-menu.level-2{  background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/sante-famille.jpg");  /*border-color: #C4C037;*/}
+		#nav-produits  .item-138 .sous-menu.level-2 {background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/chien-chat.jpg")}
+		#nav-produits  .item-137 .sous-menu.level-2 {background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/assurance-scolaire.jpg")}
+    #nav-produits  .item-289 .sous-menu.level-2 {background-image: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sous-menu/image_hospitalisation-sous-menu.jpg")}
+
+	#nav-produits .sous-menu.level-3 { 
+		
+		background-image:none; 
+		background-color:transparent; 
+		position:static;
+	}
+	
+	#nav-produits .sous-menu.level-3 li{ background-color:none;}
+ 
+ 
+ 	#nav-produits .item-122 .sous-menu.level-2 > li a.devis {background-color:#913687}
+ 	#nav-produits .item-122 .sous-menu.level-2 > li a.devis:hover {background-color:#7F3476}
+	
+	/* deux roues */
+	
+	#nav-produits  .item-123  .sous-menu.level-2 > li a.devis {background-color: #18AEE0;}
+	#nav-produits  .item-123  .sous-menu.level-2 > li a.devis:hover{background-color:#239CC4;}
+	
+	/* habitation */
+	#nav-produits  .item-124  .sous-menu.level-2 > li a.devis {background-color: #F09E1D;}
+	#nav-produits  .item-124  .sous-menu.level-2 > li a.devis:hover {background-color: #E09018;}
+	
+	/* habitation */
+	#nav-produits  .item-125  .sous-menu.level-2 > li a.devis{background-color: #C4C037;}
+	#nav-produits  .item-125  .sous-menu.level-2 > li a.devis:hover {background-color: #B7B338;}
+
+
+
+/*******************
+******* home *******
+*******************/
+
+.particulier footer{top:0;}
+.particulier .banner h2, .espaceclient header p#baseline { color:#ea5a3f;}
+.particulier .banner h2:before{ background-color: #ea5a3f;	}
+
+/*** blocs home ***/
+
+#pratique .bloc-2.espace p{background: transparent url('/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/picto-tool-box-client-gauche.png') no-repeat;}
+#pratique .bloc-2.client p{background: transparent url('/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/picto-tool-box-client-droite.png') no-repeat;}
+#pratique .bloc-1 p.formMessage {background-image:none; width: 240px; margin:4px; margin-left:-24px; text-align:center;padding:0; color:red; font-size:12px; display:none;}
+#pratique .bloc-2.client p.tel, aside .bloc-1  div.decale p.tel{ background-image:none; padding-left: 6px; margin-bottom: 9px; padding-right: 6px; text-align:center; font-family: 'Roboto', arial, sans-serif; font-weight: bold; font-size: 23px; color: #ea5a3e;}
+#pratique  .bloc-2.client p.tel{position:relative; top:-32px; padding:0; left:36px;}
+#pratique .bloc-1 p{padding-left: 140px; background: transparent url('/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/papillon-petit.png') no-repeat;}
+
+/*******************
+** pages produits **
+*******************/
+
+
+aside .bloc-1 ul li p.decale, aside .bloc-1 div.decale p { padding-left: 112px; background: transparent url('/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sprite-aside.png') no-repeat -13px 5px; font-family: 'Roboto condensed', arial, sans-serif; height: 76px;}
+aside .bloc-1 ul li p.decale{padding-left: 72px;} 
+aside .bloc-1 ul li p.puce-1{background-position: -13px -484px;}
+aside .bloc-1 ul li p.puce-2{background-position: -13px -211px; }
+aside .bloc-1 ul li p.puce-4{background-position: -13px -102px; }
+
+/*******************
+** store locator **
+*******************/
+
+.locator h1{left:54px;font-size: 25px;}
+
+/*******************
+** garages agréés **
+*******************/
+.avantagesgarages {list-style-type:none;padding-left: 0;}
+
+.avantagesgarages li { background: url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/sprite-avantagesgarages.png") no-repeat; float: left; font-weight: 700; line-height: 1.2em; padding-right: 5px; padding-top: 60px; text-align: center; width: 24%;margin:20px 0;}
+
+.avantagesgarages li#frais { background-position:37px 0;}
+.avantagesgarages li#distance { background-position:-243px 0;}
+.avantagesgarages li#reparation { background-position:-98px 0;}
+.avantagesgarages li#gardiennage { background-position:-390px 0;}
+
+/*******************
+*****  erreur  *****
+*******************/
+
+.erreur h1:before{background-color:#EA5A3F}
+.erreur h1{color: #EA5A3F;}
+
+.erreur.item-page li {
+    background-color: #d5472c;
+}
+
+.erreur.item-page li:hover {
+	background-color: #c24931;
+}
+
+.erreur.item-page  li a {
+    background-color: #EA5A3F;
+   
+}
+.erreur.item-page li.accueil {
+	background-color:#af2b11;
+
+}
+.erreur.item-page li.accueil a {
+	background-color:#c2361b;
+
+}
+
+.erreur.item-page li.accueil:hover {
+	background-color:#9A1704;
+
+}
+
+
+.erreur.item-page  li:hover a {
+	 background-color:#d75238;
+}
+
+.erreur.item-page li.accueil:hover a{
+	background-color:#af2b11;
+
+}
+
+
+/*******************
+***** proximeo *****
+*******************/
+
+.espaceclient div.telephone * {line-height:1.4em;}
+.espaceclient p.horaires{color:#666;}
+.espaceclient  h1 {top:98px;}
+.espaceclient .callback fieldset{border: none;}
+.espaceclient .callback input{font-size: 14px;}
+.espaceclient #corps h1{top:0; left:0; position:relative;}
+.espaceclient a, .espaceclient a:visited,.espaceclient a:active, .espaceclient a:link{text-decoration:none; color: #666; font-weight:normal;}
+.espaceclient a:hover{text-decoration:underline;}
+.espaceclient #corps h1:before{display:none;}
+.espaceclient .col-2 {margin-top: 22px;}
+.espaceclient DIV#workWindow TABLE,.espaceclient DIV.menu,.espaceclient DIV.menu_over, .espaceclient .menu_onclick{font-size:12px;}
+.espaceclient .main #menu DIV.menu_over, .espaceclient .main #menu div.menu_onclick{background-color:	#EA5A3F !important}
+#corps div#workWindow{ border-left:solid 6px #EA5A3F; width:720px;}
+.client-login .col-1  #corps{width:430px; min-width:430px;margin-left:60px;  }
+.client-login #corps #ctr{width: 400px;}
+.col-2 .espaceClientContenuHome p, .col-2 .espaceClientContenuHome li{ font-family: 'Roboto', arial, sans-serif;}
+
+.col-2 .espaceClientContenuHome h2, .col-2 .espaceClientContenuHome h3  {color: #3A4A6B;  font-family: 'Roboto condensed','arial',sans-serif; text-transform: none; font-weight: normal; font-size: 22px; }
+.col-2 .espaceClientContenuHome h3  {font-size: 16px;}
+
+.col-2 .espaceClientContenuHome ul{padding-left:0px;}
+fieldset.fieldSetContact table, table.contact{ margin-left: 0;}
+
+#tabs0head0, #tabs0head1, #tabs0head2,.ongletSpace {    }
+#JustificatifBlock  tr td[style]{ padding-left:0px !important;}
+DIV#workWindow div.table {    margin-top: 0}
+.client-login .col-1{width:560px;float:left;}
+.client-login .col-2{width:400px;float:left;}
+.client-login #corps #ctr{margin:0;}
+.client-login .col-2 .espaceClientContenuHome {width:405px;margin-top:15px}
+.client-login .col-1 .ongletMain{border: 8px solid #D6D3CB; border-top: none;} 
+.client-droite #corps DIV#workWindow {
+    width: 660px;
+}
+.client-droite .col-1{ width: 840px;}
+.client-droite .col-2{ width: 80px; padding-top:14px;}
+.espaceclient fieldset{border:solid 1px #d9d9d9;}
+#corps #rechercheDevis .buttonMiddle, div.buttonMiddle { background:#D5472C ; border-radius:3px;}
+#corps #rechercheDevis .buttonMiddle:hover, div.buttonMiddle:hover{background-color: #EA5A3F }
+#corps #rechercheDevis td.buttonLeft,  td.buttonLeft	{background-image:none;	}
+#corps #rechercheDevis td.buttonRight , td.buttonRight	{background-image:none;	}
+#tabs0head0 a.ongletTextDis > p, #tabs0head0 a.ongletTextEna > p, #corps #tabs0head1 a.ongletTextDis > p,  #corps #tabs0head1 a.ongletTextEna  > p { color: #3A4A6B;} 
+a.ongletTextEna  > p {font-weight:bold;}
+DIV.detailContrat {width:805px !important;}
+
+span#aideIdentifiant label {font-family:arial, sans-serif;}
+tr.listHeader td {    color: #FFFFFF;    font-weight: bold;    text-align: center;}
+.espaceclient .infoContrat .listHeader td{color: #666;}
+table.treeLineLite {    width: 840px !important;}
+
+.espaceClientContenuHome #onglet_client, .espaceClientContenuHome #onglet_devis{background:#e9e9e9;padding:15px 28px;font-size:13px;}
+.espaceClientContenuHome #onglet_client{height:307px;}
+.espaceClientContenuHome #onglet_devis{height:335px}
+
+.col-2 .espaceClientContenuHome p , .col-2 .espaceClientContenuHome li{font-size:inherit}
+.col-2 .espaceClientContenuHome p {margin-bottom:24px}
+.col-2 #onglet_client li{font-weight:bold;position:relative;clear:both;line-height:41px;display:block;list-style-type:none;}
+.col-2 #onglet_client li i{display:block;float:left;width:40px;height:41px;background:transparent url("/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/ec-sprite-pictos.png") no-repeat 0 0;text-indent:-3000em;margin-right:20px}
+.col-2 #onglet_client li i.maj{background-position:0 0}
+.col-2 #onglet_client li i.envoyer{background-position:-62px 0}
+.col-2 #onglet_client li i.regler{background-position:-125px 0}
+.col-2 #onglet_client li i.documents{background-position:-187px 0}
+.col-2 #onglet_client li:before{height:2px;width:25px;background:#EA5A3F;position:absolute;bottom:0;left:115px;display:block;content:" "}
+.col-2 #onglet_client li.last:before{display:none}
+.col-2 #onglet_client a{font-size:inherit;text-decoration:underline;font-weight:bold}
+
+/*******************
+**** goldenfish ****
+*******************/
+
+body.retrouverdevis {line-height: inherit !important;}
+body.retrouverdevis iframe { margin-top : 20px; margin-left: 150px;}
+
+/*******************
+*** appli mobile ***
+*******************/
+.sprite-lien{list-style-type:none;text-align:center;padding:0;margin:0}
+.sprite-lien li,.sprite-lien a{display:inline-block;padding:0;margin:0}
+.sprite-lien a{width:168px;height:168px;margin:10px 5px;background:url(/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/appli-sprite-lien.png) no-repeat;text-indent:-3000em}
+.sprite-lien .ios{background-position:0 0} 
+.sprite-lien .android{background-position:0 -173px}
+
+.appli-texte{display:block;position:relative;height:510px;margin:65px 0 0}
+.appli-texte h2{text-align:center;background:#bc2d33;color:#fff;height:230px;padding:0 20px 0;font-size:21px;font-weight:700;display:block;position:relative;margin:0;border:1px solid #bc2d33}
+.appli-texte h2 span{content:" ";display:block;margin:14px auto;height:85px;width:85px;background:url(/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/appli-sprite-picto.png) no-repeat}
+.appli-texte h2:hover span{background-color:transparent}
+.appli-texte.constat h2 span{background-position:0 0} 
+.appli-texte.sinistre h2 span{background-position:0 -88px} 
+.appli-texte.photo h2 span{background-position:0 -171px} 
+.appli-texte.contact h2 span{background-position:0 -260px} 
+.appli-texte.assistance h2 span{background-position:0 -340px} 
+
+.appli-texte .capture{content:" ";display:block;height:330px;width:285px;background:url(/web/20170318173153im_/https://www.maxance.com/templates/accueil/images/appli-sprite-tel.png) no-repeat;position:absolute;bottom:0;left:14px}
+.appli-texte.constat  .capture{background-position: 0 0}  
+.appli-texte.sinistre  .capture{background-position: 0 -335px} 
+.appli-texte.photo .capture{background-position: 0 -670px} 
+.appli-texte.contact .capture{background-position: 0 -1005px} 
+.appli-texte.assistance .capture{background-position: 0 -1340px}
+
+.appli-texte p{height:auto;width:225px;vertical-align:bottom;position:absolute;bottom:0;right:0;margin:0}
+
+/*debug ie*/
+.lt-ie8 .sprite-lien li,.lt-ie8 .sprite-lien a{display:block}
+.lt-ie8 .sprite-lien{display:block}
+.lt-ie9 .appli-texte h2{font-size:18px}
+.lt-ie9 .appli-texte p{font-size:15px}
+
+/* popup voeux */
+.white-popup.voeux {max-width: 600px; padding: 0 40px 0 0;}
+.white-popup.voeux .fermer{display:none;}
+#___gcse_0,.gsc-search-button .gsc-search-button-v2,.gsc-input, .gsc-input-box , .gstl_50,  .gsc-input-box , .gsib_a, .gsib_b,.gsst_b,.gsc-input,div.gsc-control-cse.gsc-control-cse-fr,#gs_tti50{
+	width: 0px !important;
+	height:0px !important;
+	padding:0px !important;
+	margin:0px !important;
+	border-width:0px !important;
+}
+
+/*
+     FILE ARCHIVED ON 17:31:53 Mar 18, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:21:48 Jul 08, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 100.922
+  exclusion.robots: 0.096
+  exclusion.robots.policy: 0.088
+  RedisCDXSource: 1.547
+  esindex: 0.009
+  LoadShardBlock: 81.85 (3)
+  PetaboxLoader3.datanode: 73.439 (4)
+  CDXLines.iter: 15.231 (3)
+  load_resource: 45.888
+  PetaboxLoader3.resolve: 29.169
+*/

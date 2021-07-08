@@ -1,0 +1,151 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+
+
+	/*Chargement devis*/
+	function buildSrcAll() {
+		var src = document.getElementById('iframe').src ;
+		
+		if (src.indexOf("/chargement-devis-auto.html")>=0){
+		src="https://"+window.location.hostname+"/proxidirect/recherche/pages/recherche.do?";
+		} else if(src.indexOf("/chargement-devis-moto.html")>=0){
+		src="https://"+window.location.hostname+"/proxidirect/recherche/pages/recherche.do?";
+		} else if(src.indexOf("/chargement-devis-mrh.html")>=0){
+		src="https://"+window.location.hostname+"/proxidirect/recherche/pages/recherche.do?";
+		} else if(src.indexOf("/chargement-devis-sante.html")>=0){
+		src="https://"+window.location.hostname+"/proxidirect/recherche/pages/recherche.do?";
+		} else if(src.indexOf("/chargement-devis-animal.html")>=0){
+		src="https://"+window.location.hostname+"/proxidirect/recherche/pages/recherche.do?";
+		} else if(src.indexOf("/chargement-devis.html")>=0){
+		src="https://"+window.location.hostname+"/proxidirect/recherche/pages/recherche.do?";
+		}
+		
+		var cookieapporteur=readCookie("apporteur");
+		if ( window.location.search ) {	
+			var $_GET=PrmUrl(); // paramètres dans l'URL
+			var site=$_GET["site"];
+			if(src.indexOf("site=default") < 0) {
+				if((site=="")||(typeof(site)=='undefined') ){  
+					src = src + "&site=default";
+				}
+					src = src + "&" +unescape(window.location.search).substr(1) ; 
+			}
+			var marque=$_GET["marque"];
+			if (src.indexOf("&marque=MAXANCE") < 0 ) {
+				if((marque=="")||(typeof(marque)=='undefined')){ 
+					  src = src + "&marque=MAXANCE";
+				} else if(marque!=""){ src = src.replace(marque,marque.toUpperCase()); }
+			}
+			
+			var apporteur=$_GET["app"];			
+			if(apporteur!=""){ 
+				/*if(src.indexOf("&app=") < 0) {
+					src = src.replace('app','codeApporteur');
+				}else{*/
+					src = src + "&codeApporteur=" + apporteur ;	
+				//}
+			} 
+		}else{
+			if(cookieapporteur!='undefined') {
+				src = src + "&codeApporteur=" + cookieapporteur ;
+			}
+		}	
+		document.getElementById('iframe').src=src ;
+	}
+	
+
+
+$(document).ready(function($){
+	/*espace client*/	 
+	if (readCookie('utilisateurConnecte') == 'yes') {
+		var loc = window.location.pathname;
+		var result = loc.indexOf('Proximeo');
+		if (result>0) {
+			$('.item-165').hide();
+			$('.item-184').show();
+			$('.item-183').hide();
+			
+		}else{
+		//hors proximeo
+			$('.item-165').hide();
+			$('.item-184').hide();
+			
+			$('.item-183').show();
+
+		}
+	}else{
+		$('.item-165').show();
+		$('.item-184').hide();
+		$('.item-183').hide();
+	}
+ 	
+	// pour le template client-login
+	if (document.location.href.indexOf('connexionProspect') > -1 ) {
+		$('#onglet_devis').show();
+		$('#onglet_client').hide();
+	}else{
+		$('#onglet_devis').hide();
+		$('#onglet_client').show();
+	}
+
+	//formulaire connexion espace courtier
+	
+ 	if ($('form#accesCourtier')){
+		$('#codeCourtier').val('indiquez votre code ORIAS');
+		$('#codeCourtier').focus(function(){
+			if($('#codeCourtier').val()=='indiquez votre code ORIAS'){$('#codeCourtier').val('');};
+		})
+		$('#codeCourtier').blur(function(){
+			if($('#codeCourtier').val()==''){$('#codeCourtier').val('indiquez votre code ORIAS');};
+		})
+		
+		$('#submitPro').click(function(){
+			  var codeCourtier = $('#codeCourtier').val();
+			  if ( (codeCourtier.length >= 6) && (codeCourtier != 'indiquez votre code ORIAS')) { 
+				window.location = 'https://web.archive.org/web/20160409103136/http://pro.maxance.com';
+			  } else{
+				$('.formMessage').css('display', 'block');
+			  };
+		 
+		 })
+	}
+	
+	
+
+
+	
+	
+});
+
+}
+/*
+     FILE ARCHIVED ON 10:31:36 Apr 09, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:18:43 Jul 08, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 0.72
+  exclusion.robots: 0.235
+  CDXLines.iter: 22.566 (3)
+  esindex: 0.014
+  captures_list: 86.004
+  exclusion.robots.policy: 0.197
+  LoadShardBlock: 58.298 (3)
+  PetaboxLoader3.datanode: 78.185 (5)
+  load_resource: 93.5 (2)
+  PetaboxLoader3.resolve: 64.588 (2)
+*/
