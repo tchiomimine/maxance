@@ -417,13 +417,13 @@ p#baseline{color:#ea5a3f;}
 /** arrière plan du sous-menu **/
 		
 		/***** auto *****/
-		#nav-produits   .item-122 .sous-menu{ background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/auto.jpg");	/*background-color: #913687*/; }
+		#nav-produits   .item-122 .sous-menu{ background-image: url("/assets/auto.jpg");	/*background-color: #913687*/; }
 		/*#nav-produits .item-122 .sous-menu li{background-color: #913687;}*/
 		#nav-produits .item-122 .sous-menu li:hover > a, #nav-produits .item-122 .sous-menu li.default > a{background-color: white; color:#913687;}
 
 		/***** deux roues *****/
 		
-		#nav-produits .item-123 .sous-menu{  background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/moto.jpg"); /*background-color: #18AEE0; */ border-top-color: #18AEE0;/**/border-bottom-color: #18AEE0;}
+		#nav-produits .item-123 .sous-menu{  background-image: url("/assets/moto.jpg"); /*background-color: #18AEE0; */ border-top-color: #18AEE0;/**/border-bottom-color: #18AEE0;}
 		/*#nav-produits .item-123 .sous-menu li{background-color: #18AEE0;}*/
 		#nav-produits .item-123 > .sous-menu > li:hover > a, #nav-produits .item-123 .sous-menu > li.default > a, #nav-produits .item-123 .sous-menu > li:hover > span.separator{background-color: white; color:#18AEE0;}
 		
@@ -441,16 +441,16 @@ p#baseline{color:#ea5a3f;}
 		}*/
 	
 		/***** habitation *****/
-		#nav-produits .item-124 .sous-menu{  background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/habitation.jpg"); /*background-color:#F09E1D*/; border-top-color: #F09E1D;/**/border-bottom-color: #F09E1D;}
+		#nav-produits .item-124 .sous-menu{  background-image: url("/assets/habitation.jpg"); /*background-color:#F09E1D*/; border-top-color: #F09E1D;/**/border-bottom-color: #F09E1D;}
 		/*#nav-produits .item-124 .sous-menu li{background-color: #F09E1D;}*/
 		 #nav-produits .item-124 .sous-menu li:hover > a, #nav-produits .item-124 .sous-menu li.default > a{background-color: white; color:#F09E1D;}
 
 		/***** famille santé *****/
-		#nav-produits .item-125 .sous-menu{  background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/sante-famille.jpg"); /*background-color:#C4C037*/; border-top-color: #C4C037;/**/border-bottom-color: #C4C037;}
+		#nav-produits .item-125 .sous-menu{  background-image: url("/assets/sante-famille.jpg"); /*background-color:#C4C037*/; border-top-color: #C4C037;/**/border-bottom-color: #C4C037;}
 		/*#nav-produits .item-125 .sous-menu li{background-color: #C4C037;}*/
 		#nav-produits .item-125 .sous-menu li:hover > a, #nav-produits .item-125 .sous-menu li.default > a{background-color: white; color:#C4C037;}		
 
-    #nav-produits  .item-289 .sous-menu{background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/image_hospitalisation-sous-menu.jpg")}
+    #nav-produits  .item-289 .sous-menu{background-image: url("/assets/image_hospitalisation-sous-menu.jpg")}
     /*#nav-produits .item-289 .sous-menu li{background-color: #C4C037;}*/
     #nav-produits .item-289 .sous-menu li:hover > a, #nav-produits .item-289 .sous-menu li.default > a{background-color: white; color:#C4C037;}
 		/**** sous-menu level-2 ****/
@@ -459,27 +459,27 @@ p#baseline{color:#ea5a3f;}
 		#nav-produits .sous-menu.level-2 li{ background-color: transparent;}
 	
 		/* auto */
-		#nav-produits  .item-122 .sous-menu.level-2{  background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/auto.jpg");  /*border-top-color: #913687;*/}
-        #nav-produits .item-333 .sous-menu.level-2 {background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/auto_pro.jpg")}
-        #nav-produits .item-126 .sous-menu.level-2 {background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/auto-prestige.jpg")}
-		#nav-produits .item-127 .sous-menu.level-2 {background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/vsp.jpg")}
-		#nav-produits .item-128 .sous-menu.level-2 {background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/camping-car.jpg")}
+		#nav-produits  .item-122 .sous-menu.level-2{  background-image: url("/assets/auto.jpg");  /*border-top-color: #913687;*/}
+        #nav-produits .item-333 .sous-menu.level-2 {background-image: url("/assets/auto_pro.jpg")}
+        #nav-produits .item-126 .sous-menu.level-2 {background-image: url("/assets/auto-prestige.jpg")}
+		#nav-produits .item-127 .sous-menu.level-2 {background-image: url("/assets/vsp.jpg")}
+		#nav-produits .item-128 .sous-menu.level-2 {background-image: url("/assets/camping-car.jpg")}
 	
 	  /* deux roues */
-		#nav-produits  .item-133 .sous-menu.level-2{  background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/moto.jpg");  /*border-top-color: #18AEE0;*/}
-		#nav-produits  .item-131 .sous-menu.level-2 {background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/cyclo.jpg")}
-        #nav-produits .item-132 .sous-menu.level-2 {background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/quad.jpg")}
-        #nav-produits .item-320 .sous-menu.level-2 {background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/nvei.jpg")}
-        #nav-produits .item-321 .sous-menu.level-2 {background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/vae.jpg")}
+		#nav-produits  .item-133 .sous-menu.level-2{  background-image: url("/assets/moto.jpg");  /*border-top-color: #18AEE0;*/}
+		#nav-produits  .item-131 .sous-menu.level-2 {background-image: url("/assets/cyclo.jpg")}
+        #nav-produits .item-132 .sous-menu.level-2 {background-image: url("/assets/quad.jpg")}
+        #nav-produits .item-320 .sous-menu.level-2 {background-image: url("/assets/nvei.jpg")}
+        #nav-produits .item-321 .sous-menu.level-2 {background-image: url("/assets/vae.jpg")}
 	
 		/* habitation */
-		#nav-produits  .item-124 .sous-menu.level-2{  background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/habitation.jpg"); /*border-color:#F09E1D;*/}
+		#nav-produits  .item-124 .sous-menu.level-2{  background-image: url("/assets/habitation.jpg"); /*border-color:#F09E1D;*/}
 
 		/* famille-sante */
-		#nav-produits  .item-125 .sous-menu.level-2{  background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/sante-famille.jpg");  /*border-color: #C4C037;*/}
-		#nav-produits  .item-138 .sous-menu.level-2 {background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/chien-chat.jpg")}
-		#nav-produits  .item-137 .sous-menu.level-2 {background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/assurance-scolaire.jpg")}
-    #nav-produits  .item-289 .sous-menu.level-2 {background-image: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sous-menu/image_hospitalisation-sous-menu.jpg")}
+		#nav-produits  .item-125 .sous-menu.level-2{  background-image: url("/assets/sante-famille.jpg");  /*border-color: #C4C037;*/}
+		#nav-produits  .item-138 .sous-menu.level-2 {background-image: url("/assets/chien-chat.jpg")}
+		#nav-produits  .item-137 .sous-menu.level-2 {background-image: url("/assets/assurance-scolaire.jpg")}
+    #nav-produits  .item-289 .sous-menu.level-2 {background-image: url("/assets/image_hospitalisation-sous-menu.jpg")}
 
 	#nav-produits .sous-menu.level-3 { 
 		
@@ -519,19 +519,19 @@ p#baseline{color:#ea5a3f;}
 
 /*** blocs home ***/
 
-#pratique .bloc-2.espace p{background: transparent url('/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/picto-tool-box-client-gauche.png') no-repeat;}
-#pratique .bloc-2.client p{background: transparent url('/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/picto-tool-box-client-droite.png') no-repeat;}
+#pratique .bloc-2.espace p{background: transparent url('/assets/picto-tool-box-client-gauche.png') no-repeat;}
+#pratique .bloc-2.client p{background: transparent url('/assets/picto-tool-box-client-droite.png') no-repeat;}
 #pratique .bloc-1 p.formMessage {background-image:none; width: 240px; margin:4px; margin-left:-24px; text-align:center;padding:0; color:red; font-size:12px; display:none;}
 #pratique .bloc-2.client p.tel, aside .bloc-1  div.decale p.tel{ background-image:none; padding-left: 6px; margin-bottom: 9px; padding-right: 6px; text-align:center; font-family: 'Roboto', arial, sans-serif; font-weight: bold; font-size: 23px; color: #ea5a3e;}
 #pratique  .bloc-2.client p.tel{position:relative; top:-32px; padding:0; left:36px;}
-#pratique .bloc-1 p{padding-left: 140px; background: transparent url('/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/papillon-petit.png') no-repeat;}
+#pratique .bloc-1 p{padding-left: 140px; background: transparent url('/assets/papillon-petit.png') no-repeat;}
 
 /*******************
 ** pages produits **
 *******************/
 
 
-aside .bloc-1 ul li p.decale, aside .bloc-1 div.decale p { padding-left: 112px; background: transparent url('/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sprite-aside.png') no-repeat -13px 5px; font-family: 'Roboto condensed', arial, sans-serif; height: 76px;}
+aside .bloc-1 ul li p.decale, aside .bloc-1 div.decale p { padding-left: 112px; background: transparent url('/assets/sprite-aside.png') no-repeat -13px 5px; font-family: 'Roboto condensed', arial, sans-serif; height: 76px;}
 aside .bloc-1 ul li p.decale{padding-left: 72px;} 
 aside .bloc-1 ul li p.puce-1{background-position: -13px -484px;}
 aside .bloc-1 ul li p.puce-2{background-position: -13px -211px; }
@@ -548,7 +548,7 @@ aside .bloc-1 ul li p.puce-4{background-position: -13px -102px; }
 *******************/
 .avantagesgarages {list-style-type:none;padding-left: 0;}
 
-.avantagesgarages li { background: url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/sprite-avantagesgarages.png") no-repeat; float: left; font-weight: 700; line-height: 1.2em; padding-right: 5px; padding-top: 60px; text-align: center; width: 24%;margin:20px 0;}
+.avantagesgarages li { background: url("/assets/sprite-avantagesgarages.png") no-repeat; float: left; font-weight: 700; line-height: 1.2em; padding-right: 5px; padding-top: 60px; text-align: center; width: 24%;margin:20px 0;}
 
 .avantagesgarages li#frais { background-position:37px 0;}
 .avantagesgarages li#distance { background-position:-243px 0;}
@@ -660,7 +660,7 @@ table.treeLineLite {    width: 840px !important;}
 .col-2 .espaceClientContenuHome p , .col-2 .espaceClientContenuHome li{font-size:inherit}
 .col-2 .espaceClientContenuHome p {margin-bottom:24px}
 .col-2 #onglet_client li{font-weight:bold;position:relative;clear:both;line-height:41px;display:block;list-style-type:none;}
-.col-2 #onglet_client li i{display:block;float:left;width:40px;height:41px;background:transparent url("/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/ec-sprite-pictos.png") no-repeat 0 0;text-indent:-3000em;margin-right:20px}
+.col-2 #onglet_client li i{display:block;float:left;width:40px;height:41px;background:transparent url("/assets/ec-sprite-pictos.png") no-repeat 0 0;text-indent:-3000em;margin-right:20px}
 .col-2 #onglet_client li i.maj{background-position:0 0}
 .col-2 #onglet_client li i.envoyer{background-position:-62px 0}
 .col-2 #onglet_client li i.regler{background-position:-125px 0}
@@ -681,13 +681,13 @@ body.retrouverdevis iframe { margin-top : 20px; margin-left: 150px;}
 *******************/
 .sprite-lien{list-style-type:none;text-align:center;padding:0;margin:0}
 .sprite-lien li,.sprite-lien a{display:inline-block;padding:0;margin:0}
-.sprite-lien a{width:168px;height:168px;margin:10px 5px;background:url(/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/appli-sprite-lien.png) no-repeat;text-indent:-3000em}
+.sprite-lien a{width:168px;height:168px;margin:10px 5px;background:url(/assets/appli-sprite-lien.png) no-repeat;text-indent:-3000em}
 .sprite-lien .ios{background-position:0 0} 
 .sprite-lien .android{background-position:0 -173px}
 
 .appli-texte{display:block;position:relative;height:510px;margin:65px 0 0}
 .appli-texte h2{text-align:center;background:#bc2d33;color:#fff;height:230px;padding:0 20px 0;font-size:21px;font-weight:700;display:block;position:relative;margin:0;border:1px solid #bc2d33}
-.appli-texte h2 span{content:" ";display:block;margin:14px auto;height:85px;width:85px;background:url(/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/appli-sprite-picto.png) no-repeat}
+.appli-texte h2 span{content:" ";display:block;margin:14px auto;height:85px;width:85px;background:url(/assets/appli-sprite-picto.png) no-repeat}
 .appli-texte h2:hover span{background-color:transparent}
 .appli-texte.constat h2 span{background-position:0 0} 
 .appli-texte.sinistre h2 span{background-position:0 -88px} 
@@ -695,7 +695,7 @@ body.retrouverdevis iframe { margin-top : 20px; margin-left: 150px;}
 .appli-texte.contact h2 span{background-position:0 -260px} 
 .appli-texte.assistance h2 span{background-position:0 -340px} 
 
-.appli-texte .capture{content:" ";display:block;height:330px;width:285px;background:url(/web/20210319130239im_/https://www.maxance.com/templates/accueil/images/appli-sprite-tel.png) no-repeat;position:absolute;bottom:0;left:14px}
+.appli-texte .capture{content:" ";display:block;height:330px;width:285px;background:url(/assets/appli-sprite-tel.png) no-repeat;position:absolute;bottom:0;left:14px}
 .appli-texte.constat  .capture{background-position: 0 0}  
 .appli-texte.sinistre  .capture{background-position: 0 -335px} 
 .appli-texte.photo .capture{background-position: 0 -670px} 
