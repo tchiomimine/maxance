@@ -1270,7 +1270,7 @@ font-weight: 300;
 .contacthp{ border: 1px solid #A0A0A0; float:right; text-align:center; background:url(/assets/fondrappel.jpg) no-repeat}
 .contacthp .callback{padding-top:60px}
 .contacthp .callback label {font-weight: normal;padding-top:70px; background:url(/assets/picto-telephone.png) no-repeat top center; color:#333; font-size:16px;}
-.contacthp .callback #submittel, .btn_newdevis {border: 1px solid #ea5a3f; border-radius:5px; color:#ea5a3f;padding: 6px 35px; font-weight: normal;
+.contacthp .callback #submittel, .btn_newdevis, .devis_statik {border: 1px solid #ea5a3f; border-radius:5px; color:#ea5a3f;padding: 6px 35px; font-weight: normal;
     width: auto; background:none; font-size:22px; text-transform:uppercase}
 .contacthp .callback #submittel:hover, .btn_newdevis:hover, .devis_statik{background:#ea5a3f;color:#fff; text-decoration:none}
 .contacthp .callback #telInterloc {font-size: 16px;width: 170px; text-align: center; padding: 4px 0; border:none; background:transparent; border-bottom:1px solid #ea5a3f;color: #999;}
