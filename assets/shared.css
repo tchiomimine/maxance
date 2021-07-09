@@ -1332,7 +1332,7 @@ font-weight: 300;
 contact
 ****************/
 .contact  article .bloc-main{background:#F3F3F3}
-.contact .bloc-main .bloc-2{text-align:center;margin:20px 50px;width:265px;height:250px;padding:30px 50px;border-bottom:4px solid #e5dae0}
+.contact .bloc-main .bloc-2{text-align:center;margin:20px 10px;width:247px;height:250px;padding:30px 20px;border-bottom:4px solid #e5dae0}
 .contact .bloc-main strong, .contact .bloc-main  a{color:#1f3d55;font-size:20px;font-weight:700}
 .contact .bloc-main strong{text-transform:uppercase}
 .contact .bloc-main  a.bloc-lien, .offres section .bloc-2 a{text-decoration: none; background: url("/assets/sousmenu_site-maxanceV2_10.png") 95% center no-repeat #384967;color:#fff;font-size:inherit;padding:10px 50px 10px 30px;font-size:14px }
