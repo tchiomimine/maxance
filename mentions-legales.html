@@ -1895,9 +1895,10 @@
     }
   </style>
   <header>
-  <div class="topbanner" role="banner">
-    <h1><a id="home" title="Accueil" href="https://www.maxance.com/">Réseau de courtiers en assurance, maXance vous propose une assurance auto, moto, habitation, santé adaptée à tous vos besoins</a></h1>
-    <p id="baseline">Assurément experts. Essentiellement humains.</p></div>
+    <div class="topbanner" role="banner">
+      <a id="home" title="Accueil" href="http://www.maxance.com/"><img src="/assets/logo_maxance.png" alt="Maxance"></a>
+      <p id="baseline">Assurément experts. Essentiellement humains.</p>
+    </div>
     <nav role="navigation">
         <ul role="menubar" class="base-menu" id="toolbox">
           <li role="menuitem" class="item-165 first"><a href="/espace-client">Espace assuré</a></li>
@@ -2014,7 +2015,6 @@
         <p>• Mail :
           <script
             type="text/javascript">var prefix = '&#109;a' + 'i&#108;' + '&#116;o'; var path = 'hr' + 'ef' + '='; var addy31936 = 'r&#101;l&#97;t&#105;&#111;n.cl&#105;&#101;nt' + '&#64;'; addy31936 = addy31936 + 'm&#97;x&#97;nc&#101;' + '&#46;' + 'c&#111;m'; var addy_text31936 = 'r&#101;l&#97;t&#105;&#111;n.cl&#105;&#101;nt' + '&#64;' + 'm&#97;x&#97;nc&#101;' + '&#46;' + 'c&#111;m'; document.write('<a ' + path + '\'' + prefix + ':' + addy31936 + '\'>'); document.write(addy_text31936); document.write('<\/a>');</script>
-          <a href="mailto:relation.client@maxance.com">relation.client@maxance.com</a>
           <script type="text/javascript">document.write('<span style=\'display: none;\'>');</script><span
             style="display: none;">Cette adresse e-mail est protégée contre les robots spammeurs. Vous devez activer le
             JavaScript pour la visualiser.
@@ -2090,7 +2090,6 @@
           expresse et préalable de Maxance obtenue à l’adresse suivante :&nbsp;
           <script
             type="text/javascript">var prefix = '&#109;a' + 'i&#108;' + '&#116;o'; var path = 'hr' + 'ef' + '='; var addy69011 = 'dp&#111;' + '&#64;'; addy69011 = addy69011 + 'm&#97;x&#97;nc&#101;' + '&#46;' + 'c&#111;m'; var addy_text69011 = 'dpo@maxance.'; document.write('<a ' + path + '\'' + prefix + ':' + addy69011 + '\'>'); document.write(addy_text69011); document.write('<\/a>');</script>
-          <a href="mailto:dpo@groupeassu2000.fr">dpo@groupeassu2000.</a>
           <script type="text/javascript">document.write('<span style=\'display: none;\'>');</script><span
             style="display: none;">Cette adresse e-mail est protégée contre les robots spammeurs. Vous devez activer le
             JavaScript pour la visualiser.
@@ -2132,7 +2131,6 @@
           suivante
           <script
             type="text/javascript">var prefix = '&#109;a' + 'i&#108;' + '&#116;o'; var path = 'hr' + 'ef' + '='; var addy51810 = 'dp&#111;' + '&#64;'; addy51810 = addy51810 + 'm&#97;x&#97;nc&#101;' + '&#46;' + 'mc'; document.write('<a ' + path + '\'' + prefix + ':' + addy51810 + '\'>'); document.write(addy51810); document.write('<\/a>');</script>
-          <a href="mailto:dpo@maxance.mc">dpo@maxance.mc</a>
           <script type="text/javascript">document.write('<span style=\'display: none;\'>');</script><span
             style="display: none;">Cette adresse e-mail est protégée contre les robots spammeurs. Vous devez activer le
             JavaScript pour la visualiser.
@@ -2180,7 +2178,7 @@
       <li role="menuitem" class="item-178"><a href="/contact.html">Contact</a></li>
       <li role="menuitem" class="item-286"><a href="/donnees-personnelles#cookies">Gestion des
           cookies</a></li>
-      <li role="menuitem" class="item-316"><a href="https://www.maxance.com/donnees-personnelles">Données personnelles</a>
+      <li role="menuitem" class="item-316"><a href="/donnees-personnelles">Données personnelles</a>
       </li>
     </ul>
   </footer>
@@ -2201,99 +2199,6 @@
   <script
     type="application/ld+json">{"@context":"http://schema.org/","@type":"SoftwareApplication","name":"maXance","operatingSystem":"IOS","url":"https://itunes.apple.com/fr/app/maxance/id977903015","applicationCategory":"http://schema.org/MobileApplication/","aggregateRating":{"@type":"AggregateRating","ratingValue":"4","ratingCount":"9"},"offers":{"@type":"Offer","price":"0.00","priceCurrency":"Euro"}}</script>
   <div id="privacy-overlay" class="tc-reset-css tc-privacy-overlay" style="display: none;"></div>
-  <!-- ngInclude: 'Chatbox.html' -->
-  <div id="dydu-chatbox-app" ng-include="&#39;Chatbox.html&#39;" class="ng-scope">
-    <!--[if lte IE 7]><div id="IE7"><![endif]-->
-    <div ng-controller="chatboxController" class="ng-scope">
-      <!-- ngIf: loadChatbox -->
-      <div ng-if="loadChatbox" ng-class="{withVideo: isVideochat()}" class="ng-scope">
-        <!-- ngIf: loadTeaser -->
-        <!-- ngInclude: 'Teaser.html' -->
-        <div ng-include="&#39;Teaser.html&#39;" ng-if="loadTeaser" class="ng-scope">
-          <section id="dydu-teaser" ng-controller="teaserController" class="ng-scope">
-            <div class="dydu-chatbox" ng-show="showClassicTeaser()" ng-click="onClick()">
-              <div class="dydu-avatar-header" ng-style="getProfilePictureStyle()"></div> <a
-                class="dydu-link-teaser ng-binding"
-                ng-bind-html="resources.get(&#39;chatbox.teaser.need.help&#39;)">Besoin d'aide ?</a>
-            </div>
-            <aside class="action-container ng-hide" ng-show="showOptionTeaser()">
-              <div class="action-content">
-                <p ng-bind-html="resources.get(&#39;chatbox.teaser.need.help&#39;)" class="ng-binding">Besoin d'aide ?
-                </p>
-                <div class="pointer"></div>
-              </div>
-              <nav class="nav-container">
-                <ul>
-                  <li class="online"><a
-                      href="https://www.maxance.com/mentions-legales.html#">option01</a>
-                  </li>
-                  <li class="recall"><a
-                      href="https://www.maxance.com/mentions-legales.html#">option02</a>
-                  </li>
-                  <li class="email"><a
-                      href="https://www.maxance.com/mentions-legales.html#">option03</a>
-                  </li>
-                  <li class="faq"><a
-                      href="https://www.maxance.com/mentions-legales.html#">option04</a>
-                  </li>
-                </ul>
-              </nav>
-            </aside>
-          </section>
-        </div><!-- end ngIf: loadTeaser -->
-        <!-- ngIf: loadSidebar -->
-        <!-- ngIf: loadDialog -->
-        <!-- ngInclude: 'Cobrowsing.html' -->
-        <div ng-include="&#39;Cobrowsing.html&#39;" class="ng-scope">
-          <section id="dydu-cobrowsing" ng-controller="cobrowsingController" class="ng-scope">
-            <div class="top-tools ng-hide" ng-show="isCobrowsingEnabled()">
-              <div class="tools-title ng-binding"
-                ng-bind-html="resources.get(&#39;chatbox.cobrowsing.active.text&#39;)">Vous êtes en train de co-naviguer
-                avec un conseiller</div>
-              <div class="btn-outline">
-                <div ng-click="endCobrowsingRequest()"
-                  ng-bind-html="resources.get(&#39;chatbox.cobrowsing.disconnection&#39;)" class="ng-binding">
-                  Déconnexion</div>
-              </div>
-              <div class="nofloat"></div>
-            </div>
-          </section>
-        </div> <!-- ngInclude: 'ConfirmBox.html' -->
-        <div ng-include="&#39;ConfirmBox.html&#39;" class="ng-scope">
-          <section id="dydu-confirm" ng-controller="confirmController" class="ng-scope">
-            <div id="dydu-confirm-dialog" class="dydu-main-container ng-hide" ng-class="message.clazz"
-              ng-hide="hideDialog();">
-              <div>
-                <header id="dydu-confirm-dialog-header">
-                  <div class="dydu-title-container">
-                    <div class="dydu-second-title ng-binding" ng-bind-html="message.title"></div>
-                  </div>
-                  <section class="dydu-option inside">
-                    <div class="dydu-close" ng-click="cancelDialog();"></div>
-                  </section>
-                </header>
-                <section id="dydu-confirm-dialog-content">
-                  <div class="dydu-avatar-header" ng-style="getProfilePictureStyle()"></div>
-                  <p ng-bind-html="message.text" class="ng-binding"></p>
-                  <div ng-show="showForm()" class="dydu-form-container ng-hide">
-                    <form ng-submit="confirmDialog()" class="ng-pristine ng-valid">
-                      <!-- ngRepeat: param in message.formParams --> <input class="ask" type="submit" value=""> <span
-                        class="decline ng-binding" ng-click="cancelDialog();" ng-bind-html="message.no"></span>
-                      <div class="nofloat"></div>
-                    </form>
-                  </div>
-                  <div ng-show="showButtons()" class="dydu-question-container ng-hide"> <span class="ask ng-binding"
-                      ng-click="confirmDialog();" ng-bind-html="message.yes"></span> <span class="decline ng-binding"
-                      ng-click="cancelDialog();" ng-bind-html="message.no"></span> </div>
-                </section>
-              </div>
-            </div>
-          </section>
-        </div> <!-- ngInclude: 'CallBackButton.html' -->
-        <div ng-include="&#39;CallBackButton.html&#39;" class="ng-scope"></div>
-      </div><!-- end ngIf: loadChatbox -->
-    </div>
-    <!--[if lte IE 7]></div><![endif]-->
   </div>
 </body>
 
