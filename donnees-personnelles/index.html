@@ -1922,7 +1922,7 @@
             </ul>
           </nav>
         <div class="custom">
-            <div class="banner-img"><img src="/assets/IMG_politique_confidentialite.png"
+            <div class="banner-img"><img src="/assets/img-slider_mentionlegales-plansite.jpg"
                     alt="IMG politique confidentialite">
                 <div class="left">&nbsp;</div>
             </div>
@@ -2231,116 +2231,6 @@
         type="application/ld+json">{"@context":"http://schema.org/","@type":"SoftwareApplication","name":"Maxance","operatingSystem":"ANDROID","url":"https://play.google.com/store/apps/details?id=com.maxance.app","applicationCategory":"http://schema.org/MobileApplication","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","ratingCount":"9"},"offers":{"@type":"Offer","price":"0.00","priceCurrency":"Euro"}}</script>
     <script
         type="application/ld+json">{"@context":"http://schema.org/","@type":"SoftwareApplication","name":"maXance","operatingSystem":"IOS","url":"https://itunes.apple.com/fr/app/maxance/id977903015","applicationCategory":"http://schema.org/MobileApplication/","aggregateRating":{"@type":"AggregateRating","ratingValue":"4","ratingCount":"9"},"offers":{"@type":"Offer","price":"0.00","priceCurrency":"Euro"}}</script>
-    <!--
-playback timings (ms):
-  captures_list: 62.071
-  exclusion.robots: 0.154
-  exclusion.robots.policy: 0.148
-  RedisCDXSource: 4.181
-  esindex: 0.007
-  LoadShardBlock: 40.391 (3)
-  PetaboxLoader3.datanode: 41.19 (4)
-  CDXLines.iter: 15.41 (3)
-  load_resource: 71.067
-  PetaboxLoader3.resolve: 33.338
--->
-    <div id="privacy-overlay" class="tc-reset-css tc-privacy-overlay" style="display: none;"></div>
-    <!-- ngInclude: 'Chatbox.html' -->
-    <div id="dydu-chatbox-app" ng-include="&#39;Chatbox.html&#39;" class="ng-scope">
-        <!--[if lte IE 7]><div id="IE7"><![endif]-->
-        <div ng-controller="chatboxController" class="ng-scope">
-            <!-- ngIf: loadChatbox -->
-            <div ng-if="loadChatbox" ng-class="{withVideo: isVideochat()}" class="ng-scope">
-                <!-- ngIf: loadTeaser -->
-                <!-- ngInclude: 'Teaser.html' -->
-                <div ng-include="&#39;Teaser.html&#39;" ng-if="loadTeaser" class="ng-scope">
-                    <section id="dydu-teaser" ng-controller="teaserController" class="ng-scope">
-                        <div class="dydu-chatbox" ng-show="showClassicTeaser()" ng-click="onClick()">
-                            <div class="dydu-avatar-header" ng-style="getProfilePictureStyle()"></div> <a
-                                class="dydu-link-teaser ng-binding"
-                                ng-bind-html="resources.get(&#39;chatbox.teaser.need.help&#39;)">Besoin d'aide ?</a>
-                        </div>
-                        <aside class="action-container ng-hide" ng-show="showOptionTeaser()">
-                            <div class="action-content">
-                                <p ng-bind-html="resources.get(&#39;chatbox.teaser.need.help&#39;)" class="ng-binding">
-                                    Besoin d'aide ?</p>
-                                <div class="pointer"></div>
-                            </div>
-                            <nav class="nav-container">
-                                <ul>
-                                    <li class="online"><a
-                                            href="https://www.maxance.com/donnees-personnelles#">option01</a>
-                                    </li>
-                                    <li class="recall"><a
-                                            href="https://www.maxance.com/donnees-personnelles#">option02</a>
-                                    </li>
-                                    <li class="email"><a
-                                            href="https://www.maxance.com/donnees-personnelles#">option03</a>
-                                    </li>
-                                    <li class="faq"><a
-                                            href="https://www.maxance.com/donnees-personnelles#">option04</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </aside>
-                    </section>
-                </div><!-- end ngIf: loadTeaser -->
-                <!-- ngIf: loadSidebar -->
-                <!-- ngIf: loadDialog -->
-                <!-- ngInclude: 'Cobrowsing.html' -->
-                <div ng-include="&#39;Cobrowsing.html&#39;" class="ng-scope">
-                    <section id="dydu-cobrowsing" ng-controller="cobrowsingController" class="ng-scope">
-                        <div class="top-tools ng-hide" ng-show="isCobrowsingEnabled()">
-                            <div class="tools-title ng-binding"
-                                ng-bind-html="resources.get(&#39;chatbox.cobrowsing.active.text&#39;)">Vous êtes en
-                                train de co-naviguer avec un conseiller</div>
-                            <div class="btn-outline">
-                                <div ng-click="endCobrowsingRequest()"
-                                    ng-bind-html="resources.get(&#39;chatbox.cobrowsing.disconnection&#39;)"
-                                    class="ng-binding">Déconnexion</div>
-                            </div>
-                            <div class="nofloat"></div>
-                        </div>
-                    </section>
-                </div> <!-- ngInclude: 'ConfirmBox.html' -->
-                <div ng-include="&#39;ConfirmBox.html&#39;" class="ng-scope">
-                    <section id="dydu-confirm" ng-controller="confirmController" class="ng-scope">
-                        <div id="dydu-confirm-dialog" class="dydu-main-container ng-hide" ng-class="message.clazz"
-                            ng-hide="hideDialog();">
-                            <div>
-                                <header id="dydu-confirm-dialog-header">
-                                    <div class="dydu-title-container">
-                                        <div class="dydu-second-title ng-binding" ng-bind-html="message.title"></div>
-                                    </div>
-                                    <section class="dydu-option inside">
-                                        <div class="dydu-close" ng-click="cancelDialog();"></div>
-                                    </section>
-                                </header>
-                                <section id="dydu-confirm-dialog-content">
-                                    <div class="dydu-avatar-header" ng-style="getProfilePictureStyle()"></div>
-                                    <p ng-bind-html="message.text" class="ng-binding"></p>
-                                    <div ng-show="showForm()" class="dydu-form-container ng-hide">
-                                        <form ng-submit="confirmDialog()" class="ng-pristine ng-valid">
-                                            <!-- ngRepeat: param in message.formParams --> <input class="ask"
-                                                type="submit" value=""> <span class="decline ng-binding"
-                                                ng-click="cancelDialog();" ng-bind-html="message.no"></span>
-                                            <div class="nofloat"></div>
-                                        </form>
-                                    </div>
-                                    <div ng-show="showButtons()" class="dydu-question-container ng-hide"> <span
-                                            class="ask ng-binding" ng-click="confirmDialog();"
-                                            ng-bind-html="message.yes"></span> <span class="decline ng-binding"
-                                            ng-click="cancelDialog();" ng-bind-html="message.no"></span> </div>
-                                </section>
-                            </div>
-                        </div>
-                    </section>
-                </div> <!-- ngInclude: 'CallBackButton.html' -->
-                <div ng-include="&#39;CallBackButton.html&#39;" class="ng-scope"></div>
-            </div><!-- end ngIf: loadChatbox -->
-        </div>
-        <!--[if lte IE 7]></div><![endif]-->
-    </div>
 </body>
 
 </html>
